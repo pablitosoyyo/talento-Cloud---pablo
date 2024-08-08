@@ -1,0 +1,14 @@
+def calculadora (num1, num2, operacao): # declara a função num1 e num2 e qual o operador 
+  if operacao == 1:                     # para somar os dois numeros 0 operador será ==1
+    return num1 + num2                  # retorna a soma 
+  elif operacao == 2:                   # # para subtrair os dois numeros o operador será ==2
+    return num1 - num2                   # retorna a subtração
+  elif operacao == 3:                    # para multiplicar os dois numeros 0 operador será ==1
+    return num1 * num2                    # retorna a multiplicação
+  elif operacao == 4:
+    return num1 / num2
+  else:                                # se for ensirido um numero de operador que não esteja entre 1 e 4 o resultado será 0
+    return 0
+
+resultado = calculadora(1,8,1)
+print(resultado)
