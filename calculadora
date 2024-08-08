@@ -1,0 +1,33 @@
+def calculadora (num1, num2, operacao): # declara a função num1 e num2 e qual o operador 
+  if operacao == 1:                     # para somar os dois numeros 0 operador será ==1
+    return num1 + num2                  # retorna a soma 
+  elif operacao == 2:                   # # para subtrair os dois numeros o operador será ==2
+    return num1 - num2                   # retorna a subtração
+  elif operacao == 3:                    # para multiplicar os dois numeros 0 operador será ==1
+    return num1 * num2                    # retorna a multiplicação
+  elif operacao == 4:
+    return num1 / num2
+  else:                                # se for ensirido um numero de operador que não esteja entre 1 e 4 o resultado será 0
+    return 0
+
+
+programa = True
+
+while (programa == True):
+  print("Qual operação deseja realizar?")
+  print("1 - soma")
+  print("2 - subtração")
+  print("3 - multiplicação")
+  print("4 - divisão")
+  print("0 - sair")
+
+  operacao = int(input())
+  if operacao < 0 or operacao > 4:
+    print("operação invalida!!")
+  elif operacao == 0:
+    programa = False
+  else:
+    num1 = int(input("Digite o primeiro numero:"))
+    num2 = int(input("Digite o segundo numero:"))
+    resultado = calculadora(num1, num2, operacao)
+    print("O resultado é:", resultado)
